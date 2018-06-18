@@ -1,2 +1,2 @@
 # web-jujutla
-The web site of mayor Jujutla for social hours of University
+The web site of mayoralty Jujutla for social hours of University
