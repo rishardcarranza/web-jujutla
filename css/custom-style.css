@@ -1,0 +1,22 @@
+/* Show it is fixed to the top */
+body {
+    min-height: 75rem;
+    padding-top: 3.7rem;
+    font-size: 1.1em !important;
+}
+
+main#main {
+    padding: 0;
+}
+
+#logo {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+#navbarCollapse {
+    margin-left: 25em;
+}
