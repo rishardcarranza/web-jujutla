@@ -1,5 +1,6 @@
 /* Variables globales */
 var $main = $("#main");
+var $carContainer = $("#mayor-menu");
 	counter = 1;
 
 $(document).ready(function () {
@@ -10,7 +11,26 @@ $(document).ready(function () {
 	$main.fadeIn("slow");
 	// loadFancybox();
 	// loadScroll();
+
+	
 });
+
+hoverCard = function() {
+	$("#mayor-menu .card").hover(
+		function() {
+			$(this).removeClass("border-success");
+			$(this).addClass("border-primary");
+			$(this).find(".card-header").removeClass("bg-success");
+			$(this).find(".card-header").addClass("bg-primary");
+		},
+		function() {
+			$(this).removeClass("border-primary");
+			$(this).addClass("border-success");
+			$(this).find(".card-header").removeClass("bg-primary");
+			$(this).find(".card-header").addClass("bg-success");
+		}
+	);
+}
 
 menuClick = function () {
 	$("li a").on("click",function () {
@@ -25,7 +45,7 @@ menuClick = function () {
 				break;
 
 			case "mayoralty":
-				$main.load("pages/mayoralty.html?nocache="+getRandomValue());
+				$main.load("pages/mayoralty.html?nocache="+getRandomValue(), hoverCard);
 				break;
 
 			default:
