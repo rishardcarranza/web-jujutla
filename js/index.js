@@ -16,8 +16,6 @@ menuClick = function () {
 	$("li a").on("click",function () {
 		var opt = $(this).attr("id"); // Get "id" attribute of "li" tag
 
-		console.log(opt)
-		
 		$main.empty();
 		$main.hide();
 		// Option to run
@@ -27,7 +25,7 @@ menuClick = function () {
 				break;
 
 			case "mayoralty":
-				$main.load("pages/mayoralty.html?nocache="+getRandomValue(), loadSlider);
+				$main.load("pages/mayoralty.html?nocache="+getRandomValue());
 				break;
 
 			default:

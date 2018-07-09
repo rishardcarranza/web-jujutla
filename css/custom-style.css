@@ -20,3 +20,38 @@ main#main {
 #navbarCollapse {
     margin-left: 25em;
 }
+
+#footer-main {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#footer-main .social-bar a{
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+#footer-main .social-bar a.facebook:hover{
+    color: #3b5999;
+}
+
+#footer-main .social-bar a.twitter:hover{
+    color: #55acee;
+}
+
+#footer-main .social-bar a.instagram:hover{
+    color: #e4405f;
+}
+
+#footer-main .social-bar a.youtube:hover{
+    color: #cd201f;
+}
+
+#mayor-menu {
+    margin-right: 1em !important;
+    margin-left: 1em !important;
+}
+
+#mayor-menu .card {
+    cursor: pointer;
+}
