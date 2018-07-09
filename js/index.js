@@ -3,7 +3,7 @@ var $main = $("#main");
 	counter = 1;
 
 $(document).ready(function () {
-	// menuClick();
+	menuClick();
 	// menuMobClick();
 	// menuColor();
 	$main.load("pages/start.html?nocache="+getRandomValue(), loadSlider);
@@ -13,18 +13,21 @@ $(document).ready(function () {
 });
 
 menuClick = function () {
-	$("li").on("click",function () {
+	$("li a").on("click",function () {
 		var opt = $(this).attr("id"); // Get "id" attribute of "li" tag
+
+		console.log(opt)
 		
+		$main.empty();
 		$main.hide();
 		// Option to run
 		switch (opt) {
-			case "main":
-				$main.load("pages/inicio.html?nocache="+getRandomValue(), loadSlider);
+			case "start":
+				$main.load("pages/start.html?nocache="+getRandomValue(), loadSlider);
 				break;
 
-			case "major":
-				$main.load("pages/major.html?nocache="+getRandomValue(), loadSlider);
+			case "mayoralty":
+				$main.load("pages/mayoralty.html?nocache="+getRandomValue(), loadSlider);
 				break;
 
 			default:
