@@ -67,8 +67,19 @@ optionToExecute = function(opt) {
 			break;
 
 		case "government":
-			console.log(opt)
-			// $main.load("pages/mayoralty.html?nocache="+getRandomValue(), hoverCard);
+			$main.load("pages/mayoralty/government.html?nocache="+getRandomValue(), hoverCard);
+			break;
+
+		case "history":
+			$main.load("pages/mayoralty/history.html?nocache="+getRandomValue(), hoverCard);
+			break;
+
+		case "tourism":
+			$main.load("pages/mayoralty/tourism.html?nocache="+getRandomValue(), hoverCard);
+			break;
+
+		case "citizen":
+			$main.load("pages/mayoralty/citizen.html?nocache="+getRandomValue(), hoverCard);
 			break;
 
 		default:
