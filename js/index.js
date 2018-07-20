@@ -1,7 +1,8 @@
 /* Variables globales */
 var $main = $("#main");
 var $carContainer = $("#mayor-menu");
-	counter = 1;
+var	counter = 1;
+var opt = "";
 
 $(document).ready(function () {
 	menuClick();
@@ -33,8 +34,8 @@ hoverCard = function() {
 }
 
 menuClick = function () {
-	$("#navbarMain li a").click(function () {
-		var opt = $(this).attr("id"); // Get "id" attribute of "li" tag
+	$("#navbarMain li a").click(function (e) {
+		opt = $(this).attr("id"); // Get "id" attribute of "li" tag
 
 		// Active clicked element
 		$("#navbarMain li").removeClass("active");
@@ -42,14 +43,15 @@ menuClick = function () {
 		// console.log($(this).parent(".nav-item"))
 		$main.empty();
 		$main.hide();
-		
+		$main.fadeIn(function() {
+			$("div#mayor-menu div.card.border-success").click(function(e) {
+				// console.log($(this).attr("id"));
+				opt = $(this).attr("id");
+				optionToExecute(opt);
+			});	
+		});
+
 		optionToExecute(opt);
-
-		$main.fadeIn();
-	});
-
-	$("div#mayor-menu div.card.border-success").click(function(e) {
-		console.log($(this).attr("id"));
 	});
 }
 
@@ -64,8 +66,13 @@ optionToExecute = function(opt) {
 			$main.load("pages/mayoralty.html?nocache="+getRandomValue(), hoverCard);
 			break;
 
-		default:
+		case "government":
+			console.log(opt)
+			// $main.load("pages/mayoralty.html?nocache="+getRandomValue(), hoverCard);
+			break;
 
+		default:
+			console.log("Option isn't controllable: " + opt);
 			break;
 	}
 }
