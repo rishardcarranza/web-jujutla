@@ -33,28 +33,41 @@ hoverCard = function() {
 }
 
 menuClick = function () {
-	$("li a").on("click",function () {
+	$("#navbarMain li a").click(function () {
 		var opt = $(this).attr("id"); // Get "id" attribute of "li" tag
 
+		// Active clicked element
+		$("#navbarMain li").removeClass("active");
+		$(this).parent(".nav-item").addClass("active");
+		// console.log($(this).parent(".nav-item"))
 		$main.empty();
 		$main.hide();
-		// Option to run
-		switch (opt) {
-			case "start":
-				$main.load("pages/start.html?nocache="+getRandomValue(), loadSlider);
-				break;
-
-			case "mayoralty":
-				$main.load("pages/mayoralty.html?nocache="+getRandomValue(), hoverCard);
-				break;
-
-			default:
-
-				break;
-		}
 		
+		optionToExecute(opt);
+
 		$main.fadeIn();
 	});
+
+	$("div#mayor-menu div.card.border-success").click(function(e) {
+		console.log($(this).attr("id"));
+	});
+}
+
+optionToExecute = function(opt) {
+	// Option to run
+	switch (opt) {
+		case "start":
+			$main.load("pages/start.html?nocache="+getRandomValue(), loadSlider);
+			break;
+
+		case "mayoralty":
+			$main.load("pages/mayoralty.html?nocache="+getRandomValue(), hoverCard);
+			break;
+
+		default:
+
+			break;
+	}
 }
 
 
