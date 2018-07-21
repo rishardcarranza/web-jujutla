@@ -1,7 +1,8 @@
 /* Variables globales */
 var $main = $("#main");
 var $carContainer = $("#mayor-menu");
-	counter = 1;
+var	counter = 1;
+var opt = "";
 
 $(document).ready(function () {
 	menuClick();
@@ -33,28 +34,58 @@ hoverCard = function() {
 }
 
 menuClick = function () {
-	$("li a").on("click",function () {
-		var opt = $(this).attr("id"); // Get "id" attribute of "li" tag
+	$("#navbarMain li a").click(function (e) {
+		opt = $(this).attr("id"); // Get "id" attribute of "li" tag
 
+		// Active clicked element
+		$("#navbarMain li").removeClass("active");
+		$(this).parent(".nav-item").addClass("active");
+		// console.log($(this).parent(".nav-item"))
 		$main.empty();
 		$main.hide();
-		// Option to run
-		switch (opt) {
-			case "start":
-				$main.load("pages/start.html?nocache="+getRandomValue(), loadSlider);
-				break;
+		$main.fadeIn(function() {
+			$("div#mayor-menu div.card.border-success").click(function(e) {
+				// console.log($(this).attr("id"));
+				opt = $(this).attr("id");
+				optionToExecute(opt);
+			});	
+		});
 
-			case "mayoralty":
-				$main.load("pages/mayoralty.html?nocache="+getRandomValue(), hoverCard);
-				break;
-
-			default:
-
-				break;
-		}
-		
-		$main.fadeIn();
+		optionToExecute(opt);
 	});
+}
+
+optionToExecute = function(opt) {
+	// Option to run
+	switch (opt) {
+		case "start":
+			$main.load("pages/start.html?nocache="+getRandomValue(), loadSlider);
+			break;
+
+		case "mayoralty":
+			$main.load("pages/mayoralty.html?nocache="+getRandomValue(), hoverCard);
+			break;
+
+		case "government":
+			$main.load("pages/mayoralty/government.html?nocache="+getRandomValue(), hoverCard);
+			break;
+
+		case "history":
+			$main.load("pages/mayoralty/history.html?nocache="+getRandomValue(), hoverCard);
+			break;
+
+		case "tourism":
+			$main.load("pages/mayoralty/tourism.html?nocache="+getRandomValue(), hoverCard);
+			break;
+
+		case "citizen":
+			$main.load("pages/mayoralty/citizen.html?nocache="+getRandomValue(), hoverCard);
+			break;
+
+		default:
+			console.log("Option isn't controllable: " + opt);
+			break;
+	}
 }
 
 
