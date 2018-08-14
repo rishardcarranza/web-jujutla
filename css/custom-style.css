@@ -73,7 +73,15 @@ main#main {
 
 /*Turismo*/
 
+/*margen de la seccion de turismo*/
 
+.main-margin-turist{
+
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: -1px;
+
+}
 
 /*slider carousel boostrap*/
 .carousel-fade .carousel-item {
