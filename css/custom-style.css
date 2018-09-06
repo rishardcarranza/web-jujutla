@@ -183,27 +183,27 @@ main#main {
 }
 
 .turism:nth-child(1) {
-    background-color: #1d4066;
+    background-color: #004F6D;
 }
 
 .turism:nth-child(2) {
-    background-color: #00458fe5;
+    background-color: #0072BB;
 }
 
 .turism:nth-child(3) {
-    background-color: #1d4066;
+    background-color: #004F6D;
 }
 
 .turism:nth-child(4) {
-    background-color: #00458fe5;
+    background-color:#0072BB;
 }
 
 .turism:nth-child(5) {
-    background-color: #1d4066;
+    background-color: #004F6D;
 }
 
 .turism:nth-child(6) {
-    background-color: #00458fe5;
+    background-color:  #0072BB;
 }
 
 .turism:nth-child(7) {
@@ -314,7 +314,7 @@ main#main {
 }
 
 .wrapper.style1 {
-    background-color: #28a745;
+    background-color:#00FC69;
     color: #ffffff;
     text-align: center;
 }

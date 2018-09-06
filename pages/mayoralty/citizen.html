@@ -1,26 +1,153 @@
-<br><br><br>
+<br><br>
 <div class="main-margin">
-	<h1>Atención Ciudadana</h1>
-	<hr>
-		<form action="/my-handling-form-page" method="post">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name" />
-    </div>
-    <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_email" />
-    </div>
-    <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
-    </div>
+
+    <h1 class="item-title text-center">Atencion Ciudadana</h1>
+    <h4 class="text-center">Espacio creado para la atencion a problematicas de la ciudadania en general.</h4>
+    <h4 class="text-center">Completar informacion en el formulario.</h4>
     
-    <div class="button">
-        <button type="submit">Send your message</button>
-    </div>
-</form>
+    <section id="contact-form-section" class="form-content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="tab-content">
+                    <div class="col-sm-12">
+                        <!--<div class="item-wrap">-->
+                            <div class="row">
+                                
+                                <div class="col-sm-12">
+                                    <div class="item-content colBottomMargin">
+                                        <div class="item-info">
+                                            
+                                            
+                                            
+                                        </div><!--End item-info -->
+                                        
+                                   </div><!--End item-content -->
+                                </div><!--End col -->
+                                <div class="col-md-12">
+                                
+                                
+                                <form id="contactForm" name="contactform" data-toggle="validator" class="popup-form">
+                                                <div class="row">
+                                                    <div id="msgContactSubmit" class="hidden"></div>
+                                                    
+                                                    <div class="form-group col-sm-6">
+                                                        <div class="help-block with-errors"></div>
+                                                        <input name="fname" id="fname" placeholder="Nombre*" class="form-control" type="text" required data-error="Por favor ingresa tu nombre"> 
+                                                        <div class="input-group-icon"><i class="fa fa-user"></i></div>
+                                                    </div><!-- end form-group -->
+                                                    <div class="form-group col-sm-6">
+                                                        <div class="help-block with-errors"></div>
+                                                        <input name="email" id="email" placeholder="Correo elecronico*" pattern=".*@\w{2,}\.\w{2,}" class="form-control" type="email" required data-error="Por favor ingresa un correo electrónico válido">
+                                                        <div class="input-group-icon"><i class="fa fa-envelope"></i></div>
+                                                    </div><!-- end form-group -->
+                                                    <div class="form-group col-sm-6">
+                                                        <div class="help-block with-errors"></div>
+                                                        <input name="phone" id="phone" placeholder="Teléfono*" class="form-control" type="text" required data-error="Por favor ingresa tu número de teléfono">
+                                                        <div class="input-group-icon"><i class="fa fa-phone"></i></div> 
+                                                    </div><!-- end form-group -->
+                                                    <div class="form-group col-sm-6">
+                                                        <div class="help-block with-errors"></div>
+                                                        <input name="subject" id="subject" placeholder="Asunto*" class="form-control" type="text" required data-error="Por favor ingresa el asunto">
+                                                        <div class="input-group-icon"><i class="fa fa-book"></i></div> 
+                                                    </div><!-- end form-group -->
+                                                    <div class="form-group col-sm-6">
+                                                        <div class="help-block with-errors"></div>
+                                                        <input name="phone" id="phone" placeholder="Referencia*" class="form-control" type="text" required data-error="Por favor ingresa tu número de teléfono">
+                                                        <div class="input-group-icon"><i class="fa fa-map-marker"></i></div> 
+                                                    </div><!-- end form-group -->
+
+                                                
+                                                        
+                                                    <div class="col-sm-6">
+                                                            <div class="help-block with-errors"></div>
+                                    
+                                                        <select class="form-group col-sm-12 form-control ">
+                                                            
+                                                                <option>Seleccione Zona--</option>
+                                                                <option>Rural</option>
+                                                                <option>Urbana</option>
+                                                                    
+                                                              </select>
+  
+                                                      </div>
+                                                              
+                                                      <!--Ubicacion -->
+                                                      <div class="col-sm-12">
+                                                            <div class="help-block with-errors"></div>
+                                    
+                                                        <select class="form-group col-sm-12 form-control ">
+                                                            
+                                                                <option>Ubicacion de suceso--</option>
+                                                                <option>Jujutla</option>
+                                                                <option>Barra de Santiago</option>
+                                                                <option>Rosario</option>
+                                                                <option>Diamante</option>
+                                                                <option>La Loma</option>
+                                                                <option>Guayapa</option>
+                                                                    
+                                                              </select>
+  
+                                                      </div>
+                                                      
+                                                      
+                                                        </div><!-- end form-group -->
 
 
+                                                
+                                                    <div class="form-group col-sm-12">
+                                                        <div class="help-block with-errors"></div>
+                                                        <textarea rows="3" name="message" id="message" placeholder="Descripcion del Suceso*" class="form-control" required data-error="Por favor ingresa un mensaje"></textarea>
+                                                        <div class="textarea input-group-icon"><i class="fa fa-pencil"></i></div>
+                                                    </div><!-- end form-group -->
+                                                    
 
-</div>
+                                                    <!--imagen-->
+                                                    
+                                                    <div class="form-group col-sm-6">
+
+                                                            <form>
+                                                                    <div class="form-group col-sm-6">
+                                                                      <label for="exampleFormControlFile1">Puede enviar una imagen</label>
+                                                                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                                    </div>
+                                                                  </form>
+
+
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="form-group last col-sm-12">
+                                                        <button type="submit" id="submit" class="btn btn-custom"><i class='fa fa-envelope'></i> Enviar</button>
+                                                    </div><!-- end form-group -->   
+                                            
+                                                    <span class="sub-text">* Campos requeridos</span>
+                                                    <div class="clearfix"></div>
+                                                </div><!-- end row -->
+                                            </form><!-- end form -->
+                                            
+                                            
+                                    
+                                    
+                                  
+                                
+                                </div>
+                            </div><!--End row -->
+                            
+                        
+                                
+                            
+                            <!-- Popup end -->
+                            
+                        </div><!-- end item-wrap -->
+                    </div><!--End col -->
+                </div><!--End tab-content -->
+            </div><!--End row -->
+        </div><!--End container -->
+    </section>
+    
+    
+    
+    <div class="colBottomMargin">
+        &nbsp;<div class="colBottomMargin">&nbsp;</div>
+    </div>  
+    
