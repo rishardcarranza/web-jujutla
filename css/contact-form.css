@@ -159,7 +159,7 @@ radial-gradient(transparent 66%, transparent 66%);}
     padding:6px 20px;
     text-transform:uppercase;}
 
-.btn-custom{background-color:#304f6f;
+.btn-custom{background-color:#0097e6;
     border:1px solid #3e3e3e;
     color:#fff;
     -webkit-box-shadow:0 0 1px transparent;
@@ -177,7 +177,7 @@ radial-gradient(transparent 66%, transparent 66%);}
 
 
     /** boton enviar**/
-.btn-custom::before{background-color:#026efb;
+.btn-custom::before{background-color:#00da00;
     bottom:0;content:"";
     left:0;position:absolute;
     right:0;
@@ -241,7 +241,7 @@ radial-gradient(transparent 66%, transparent 66%);}
 
 
 .popup-form .form-control:focus, .popup-form .has-error .form-control:focus{
-    border-color:#1797ff;
+    border-color:#0d2233;
     box-shadow:0 1px 1px rgba(245, 142, 3, 0.075) inset, 0 0 8px rgba(245, 142, 3, 0.6);
 }
 
