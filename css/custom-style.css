@@ -27,12 +27,8 @@ main#main {
 
 
 #footer-main {
-    padding-top: 5em;
-    padding-bottom: 6em;
-    background: #2b2b2b;
-    text-align: center;
-    color: #ddd;
-    margin-top: 8em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 #footer-main .social-bar a{
