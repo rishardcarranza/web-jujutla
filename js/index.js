@@ -1,6 +1,7 @@
 /* Variables globales */
 var $main = $("#main");
 var $carContainer = $("#mayor-menu");
+//var $cardContainer = $("#servi-menu");
 var	counter = 1;
 var opt = "";
 
@@ -82,9 +83,36 @@ optionToExecute = function(opt) {
 			$main.load("pages/mayoralty/citizen.html?nocache="+getRandomValue(), hoverCard);
 			break;
 
-		default:
-			console.log("Option isn't controllable: " + opt);
+			case "register":
+			$main.load("pages/services/register.html?nocache="+getRandomValue(), hoverCard);
 			break;
+
+
+			//services menu
+		
+		case "services":
+		$main.load("pages/services.html?nocache="+getRandomValue(), hoverCard);
+		break;
+
+	case "registre":
+		$main.load("pages/services/registre.html?nocache="+getRandomValue(), hoverCard);
+		break;
+	case "catastre":
+		$main.load("pages/services/catastre.html?nocache="+getRandomValue(), hoverCard);
+		break;
+	case "permits":
+		$main.load("pages/services/permits.html?nocache="+getRandomValue(), hoverCard);
+		break;
+
+	case "public":
+		$main.load("pages/services/public.html?nocache="+getRandomValue(), hoverCard);
+		break;
+
+	default:
+		console.log("Option isn't controllable: " + opt);
+		break;
+
+		
 	}
 }
 
@@ -134,3 +162,10 @@ loadScroll = function () {
 getRandomValue = function () {
 	return Math.random()*100000000000000000;
 }
+
+/////////////////////////////////////////////////////////////////////////
+
+//Clik menu servicios 
+
+
+
