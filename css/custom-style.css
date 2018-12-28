@@ -25,10 +25,13 @@ main#main {
 }
 
 
-
+/* Footer */
 #footer-main {
     padding-top: 2em;
     padding-bottom: 2em;
+    position: static;
+    bottom: 0;
+    width: 100%;
 }
 
 #footer-main .social-bar a{
@@ -51,6 +54,7 @@ main#main {
 #footer-main .social-bar a.youtube:hover{
     color: #cd201f;
 }
+/* ************************************************************************ */
 
 .main-margin {
     margin-right: 1em !important;
@@ -281,10 +285,10 @@ transition:all 0.3s ease;
         }
     
             header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
-                border-bottom: solid 2px #fff;
-                display: inline-block;
-                padding-bottom: 2em;
-                position: relative;
+                /* border-bottom: solid 2px #fff; */
+                /* display: inline-block; */
+                /* padding-bottom: 2em; */
+                /* position: relative; */
             }
     
                 header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
@@ -402,3 +406,8 @@ font-size: 20px;
     
     
     /*********************************************************************************************/
+
+
+/* Tickets Container */
+
+/****************************************************/
