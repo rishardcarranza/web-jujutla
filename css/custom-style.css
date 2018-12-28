@@ -371,19 +371,28 @@ font-size: 20px;
     
     
     }
+
+    /*propiedad quitar subrayado de hipervionculo*/
+a:link
+{
+text-decoration:none;
+} 
+/*----------------------------------------------------*/
     
+
     .cards {
         margin: 5px;
         margin-left: 60px;
         margin-right: 60px;
-        border-radius: 3px; 
-        background: rgb(0, 73, 230);
+        border-radius: 1px; 
+        background:#1976d2;
         
     }
     
-    card-header{
+    .card-header{
     
-        margin-left: 40px;
+        margin-left: 0px;
+        
     }
     
     .card-body{
@@ -402,6 +411,8 @@ font-size: 20px;
     .defuncion{
         text-align: center;
         font-weight: bold;
+        
+        
     }
     
     
