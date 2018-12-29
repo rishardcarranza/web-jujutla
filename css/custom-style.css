@@ -388,6 +388,13 @@ text-decoration:none;
         background:#1976d2;
         
     }
+
+    /*hover del acordion*/
+    .cards:hover{
+        background: #002e58;
+        transition-duration: 1s, 1s, 1s;
+        
+    }
     
     .card-header{
     
