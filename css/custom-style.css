@@ -268,7 +268,11 @@ transition:all 0.3s ease;
         }
 
         .wrapper.style1 {
-            background-color: rgb(40, 167, 69);
+            /* background-color: rgb(40, 167, 69); */
+            background-image: url(http://localhost/website-jujutla/web-jujutla/images/header.jpg);
+            background-repeat: round;
+            background-position: left top;
+            background-attachment: fixed;
             color: #ffffff;
             text-align: center;
         }

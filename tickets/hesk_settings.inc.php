@@ -65,7 +65,7 @@ $hesk_settings['cat_show_select']=15;
 
 // --> SPAM Prevention
 $hesk_settings['secimg_use']=1;
-$hesk_settings['secimg_sum']='UA13QRGVR2';
+$hesk_settings['secimg_sum']='YZ3RNBJ5XZ';
 $hesk_settings['recaptcha_use']=0;
 $hesk_settings['recaptcha_public_key']='';
 $hesk_settings['recaptcha_private_key']='';
@@ -121,7 +121,7 @@ $hesk_settings['smtp_timeout']=20;
 $hesk_settings['smtp_ssl']=1;
 $hesk_settings['smtp_tls']=0;
 $hesk_settings['smtp_user']='rishardcarranza';
-$hesk_settings['smtp_password']='Carranza14**';
+$hesk_settings['smtp_password']='';
 
 // --> Email piping
 $hesk_settings['email_piping']=0;
