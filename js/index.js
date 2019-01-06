@@ -57,6 +57,7 @@ menuClick = function () {
 }
 
 optionToExecute = function(opt) {
+	// console.log(opt)
 	// Option to run
 	switch (opt) {
 		case "start":
@@ -83,34 +84,53 @@ optionToExecute = function(opt) {
 			$main.load("pages/mayoralty/citizen.html?nocache="+getRandomValue(), hoverCard);
 			break;
 
-			case "register":
+		case "register":
 			$main.load("pages/services/register.html?nocache="+getRandomValue(), hoverCard);
+		break;
+
+		//services menu	
+		case "services":
+			$main.load("pages/services.html?nocache="+getRandomValue(), hoverCard);
+		break;
+
+		case "registre":
+			$main.load("pages/services/registre.html?nocache="+getRandomValue(), hoverCard);
+			break;
+		case "catastre":
+			$main.load("pages/services/catastre.html?nocache="+getRandomValue(), hoverCard);
+			break;
+		case "permits":
+			$main.load("pages/services/permits.html?nocache="+getRandomValue(), hoverCard);
 			break;
 
+		case "public":
+			$main.load("pages/services/public.html?nocache="+getRandomValue(), hoverCard);
+			break;
 
-			//services menu
-		
-		case "services":
-		$main.load("pages/services.html?nocache="+getRandomValue(), hoverCard);
-		break;
-
-	case "registre":
-		$main.load("pages/services/registre.html?nocache="+getRandomValue(), hoverCard);
-		break;
-	case "catastre":
-		$main.load("pages/services/catastre.html?nocache="+getRandomValue(), hoverCard);
-		break;
-	case "permits":
-		$main.load("pages/services/permits.html?nocache="+getRandomValue(), hoverCard);
+		// Portal menu	
+		case "portal":
+			$main.load("pages/transparency.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
-	case "public":
-		$main.load("pages/services/public.html?nocache="+getRandomValue(), hoverCard);
+		case "information":
+			$main.load("pages/transparency/information.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
-	default:
-		console.log("Option isn't controllable: " + opt);
+		case "laws":
+			$main.load("pages/transparency/laws.html?nocache="+getRandomValue(), hoverCard);
 		break;
+
+		case "budgets":
+			$main.load("pages/transparency.html?nocache="+getRandomValue(), hoverCard);
+		break;
+
+		case "portal":
+			$main.load("pages/transparency.html?nocache="+getRandomValue(), hoverCard);
+		break;
+
+		default:
+			console.log("Option isn't controllable: " + opt);
+			break;
 
 		
 	}
