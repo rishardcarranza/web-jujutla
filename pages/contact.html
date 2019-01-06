@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+     
+  <div class="container">
+      <div class="row justify-content-center mt-5 pt-5">
+          <div class="col-md-7">
+              <h1 class="display-4">Estamos para ayudarte.</h1>
+              <hr class="bg-info">
+              <p class="">Ponte en contacto con nosotros. Estamos para ayudarte.</p>
+              <p class="text-danger small pt-0 mt-0">*Todos los campos son obligatorios</p>
+               <div class="alert alert-success d-none" id="mensajeExito">Mensaje enviado con éxito</div>
+               <div class="alert alert-danger d-none"  id="mensajeError">Error</div>
+              <form id="formulario">
+                  
+                    <div class="row form-group">
+                        <label for="nombre" class="col-form-label col-md-4"><i class="fas fa-user-check"></i> Nombre</label>
+                        <div class="col-md-8">
+                            <input type="text" name="nombre" value="" id="nombre" class="form-control" placeholder="Tu Nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="email" class="col-form-label col-md-4"><i class="fas fa-envelope"></i> Correo</label>
+                        <div class="col-md-8">
+                            <input type="email" name="email" value="" id="email" class="form-control" placeholder="Tu correo"required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="mensaje" class="col-form-label col-md-4"><i class="fas fa-comment"></i> Mensaje</label>
+                        <div class="col-md-8">
+                            <textarea rows="3" class="form-control" id="mensaje" name="mensaje" placeholder="Ingresa mensaje"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                </form>
+          </div>
+      </div>
+  </div>
+
+    <!-- Personal Library -->
+    <script type="text/javascript" src="js/formulario.js" ></script>
+   
+    
+</body>
+</html>

@@ -128,6 +128,12 @@ optionToExecute = function(opt) {
 			$main.load("pages/transparency.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
+		//Menu contacto
+
+		case "contact":
+		$main.load("pages/contact.html?nocache="+getRandomValue(), hoverCard);
+		break;
+
 		default:
 			console.log("Option isn't controllable: " + opt);
 			break;
