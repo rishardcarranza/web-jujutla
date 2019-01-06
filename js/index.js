@@ -128,7 +128,13 @@ optionToExecute = function(opt) {
 			$main.load("pages/transparency.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
-		//Menu contacto
+		//Noticias
+
+		case "news":
+		$main.load("pages/news.html?nocache="+getRandomValue(), hoverCard);
+		break;
+
+		//Contacto
 
 		case "contact":
 		$main.load("pages/contact.html?nocache="+getRandomValue(), hoverCard);
