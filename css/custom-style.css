@@ -425,6 +425,31 @@ text-decoration:none;
         
         
     }
+
+
+/** Noticias**/
+
+.entrada {
+font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+font-size: 20px;
+
+}
+
+.entrada h3::after {
+
+    content: '';
+    display: block;
+    width: 9rem;
+    height: .2rem;
+    background-color: #71b100;
+    clear: both;
+    margin-top: .5rem;
+    
+}
+.entrada span {
+    color: #094de0;
+}
     
     
     /*********************************************************************************************/
