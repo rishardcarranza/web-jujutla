@@ -5,9 +5,9 @@
 
 // --> General settings
 $hesk_settings['site_title']='Alcaldía Municipal de Jujutla';
-$hesk_settings['site_url']='http://localhost/website-jujutla/web-jujutla/tickets';
+$hesk_settings['site_url']='http://localhost/web-jujutla/tickets';
 $hesk_settings['hesk_title']='Atención Ciudadana';
-$hesk_settings['hesk_url']='http://localhost/website-jujutla/web-jujutla/tickets';
+$hesk_settings['hesk_url']='http://localhost/web-jujutla/tickets';
 $hesk_settings['webmaster_mail']='rishardcarranza@gmail.com';
 $hesk_settings['noreply_mail']='support@alcaldiajujutla.com';
 $hesk_settings['noreply_name']='Atención Ciudadana - Jujutla';
@@ -65,7 +65,7 @@ $hesk_settings['cat_show_select']=15;
 
 // --> SPAM Prevention
 $hesk_settings['secimg_use']=1;
-$hesk_settings['secimg_sum']='YZ3RNBJ5XZ';
+$hesk_settings['secimg_sum']='ZQAWZVL8G4';
 $hesk_settings['recaptcha_use']=0;
 $hesk_settings['recaptcha_public_key']='';
 $hesk_settings['recaptcha_private_key']='';
