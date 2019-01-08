@@ -134,6 +134,12 @@ optionToExecute = function(opt) {
 		$main.load("pages/news.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
+		//Projects
+
+		case "projects":
+		$main.load("pages/projects.html?nocache="+getRandomValue(), hoverCard);
+		break;
+		
 		//Contacto
 
 		case "contact":
