@@ -25,6 +25,7 @@ main#main {
 }
 
 
+
 /* Footer */
 #footer-main {
     padding-top: 2em;
@@ -32,6 +33,16 @@ main#main {
     position: static;
     bottom: 0;
     width: 100%;
+}
+
+#navbarFoot ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+p.rights {
+    position: absolute;
+    bottom: 0;
 }
 
 #footer-main .social-bar a{

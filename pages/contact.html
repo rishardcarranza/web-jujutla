@@ -18,29 +18,29 @@
                <div class="alert alert-success d-none" id="mensajeExito">Mensaje enviado con éxito</div>
                <div class="alert alert-danger d-none"  id="mensajeError">Error</div>
               <form id="formulario">
-                  
                     <div class="row form-group">
                         <label for="nombre" class="col-form-label col-md-4"><i class="fas fa-user-check"></i> Nombre</label>
                         <div class="col-md-8">
                             <input type="text" name="nombre" value="" id="nombre" class="form-control" placeholder="Tu Nombre" required>
                         </div>
                     </div>
-
                     <div class="row form-group">
                         <label for="email" class="col-form-label col-md-4"><i class="fas fa-envelope"></i> Correo</label>
                         <div class="col-md-8">
                             <input type="email" name="email" value="" id="email" class="form-control" placeholder="Tu correo"required>
                         </div>
                     </div>
-
                     <div class="row form-group">
                         <label for="mensaje" class="col-form-label col-md-4"><i class="fas fa-comment"></i> Mensaje</label>
                         <div class="col-md-8">
                             <textarea rows="3" class="form-control" id="mensaje" name="mensaje" placeholder="Ingresa mensaje"></textarea>
                         </div>
                     </div>
-
-                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                    <div class="row justify-content-end">
+                        <div class="col-md-8 ">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                        </div>
+                    </div>
                 </form>
           </div>
       </div>
