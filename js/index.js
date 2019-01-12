@@ -107,7 +107,7 @@ optionToExecute = function(opt) {
 			$main.load("pages/services/public.html?nocache="+getRandomValue(), hoverCard);
 			break;
 
-		// Portal menu	
+		// Portal Transparencia menu	
 		case "portal":
 			$main.load("pages/transparency.html?nocache="+getRandomValue(), hoverCard);
 		break;
@@ -121,11 +121,11 @@ optionToExecute = function(opt) {
 		break;
 
 		case "budgets":
-			$main.load("pages/transparency.html?nocache="+getRandomValue(), hoverCard);
+			$main.load("pages/transparency/budget.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
-		case "portal":
-			$main.load("pages/transparency.html?nocache="+getRandomValue(), hoverCard);
+		case "participation":
+			$main.load("pages/transparency/participation.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
 		//Noticias
