@@ -35,7 +35,7 @@ hoverCard = function() {
 }
 
 menuClick = function () {
-	$("#navbarMain li a").click(function (e) {
+	$("#navbarMain li a, #navbarFoot li a").click(function (e) {
 		opt = $(this).attr("id"); // Get "id" attribute of "li" tag
 
 		// Active clicked element
@@ -65,6 +65,7 @@ optionToExecute = function(opt) {
 			break;
 
 		case "mayoralty":
+		case "mayoralty2":
 			$main.load("pages/mayoralty.html?nocache="+getRandomValue(), hoverCard);
 			break;
 
@@ -90,6 +91,7 @@ optionToExecute = function(opt) {
 
 		//services menu	
 		case "services":
+		case "services2":
 			$main.load("pages/services.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
@@ -109,6 +111,7 @@ optionToExecute = function(opt) {
 
 		// Portal Transparencia menu	
 		case "portal":
+		case "portal2":
 			$main.load("pages/transparency.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
@@ -131,18 +134,21 @@ optionToExecute = function(opt) {
 		//Noticias
 
 		case "news":
+		case "news2":
 		$main.load("pages/news.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
 		//Projects
 
 		case "projects":
+		case "projects2":
 		$main.load("pages/projects.html?nocache="+getRandomValue(), hoverCard);
 		break;
 		
 		//Contacto
 
 		case "contact":
+		case "contact2":
 		$main.load("pages/contact.html?nocache="+getRandomValue(), hoverCard);
 		break;
 
