@@ -99,8 +99,8 @@ optionToExecute = function(opt) {
 		case "catastre":
 			$main.load("pages/services/catastre.html?nocache="+getRandomValue(), hoverCard);
 			break;
-		case "permits":
-			$main.load("pages/services/permits.html?nocache="+getRandomValue(), hoverCard);
+		case "education":
+			$main.load("pages/services/education.html?nocache="+getRandomValue(), hoverCard);
 			break;
 
 		case "public":
