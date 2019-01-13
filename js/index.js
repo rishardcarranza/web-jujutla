@@ -1,6 +1,7 @@
 /* Variables globales */
 var $main = $("#main");
 var $carContainer = $("#mayor-menu");
+// var $btnEnviar = $("#btnEnviar");
 //var $cardContainer = $("#servi-menu");
 var	counter = 1;
 var opt = "";
@@ -13,8 +14,6 @@ $(document).ready(function () {
 	$main.fadeIn("slow");
 	// loadFancybox();
 	// loadScroll();
-
-	
 });
 
 hoverCard = function() {
@@ -53,6 +52,35 @@ menuClick = function () {
 		});
 
 		optionToExecute(opt);
+	});
+}
+
+clickContact = function() {
+	$("#btnEnviar").click(function(e) {
+		$("#mensajeExito").addClass("d-none");
+		$("#mensajeError").addClass("d-none");
+		$(this).prop("disabled", true);
+		if ($("#name").val() !== "" && $("#email").val() !== "" && $("#message").val() !== "") {
+			url = "pages/contact_send_mail.php";
+			parameters = {
+				"name" : $("#name").val(),
+				"email" : $("#email").val(),
+				"message" : $("#message").val()
+			}
+			// console.log(parameters);
+			$.post(url, parameters, function(response) {
+				result = JSON.parse(response)
+				// console.log(result);
+				if (result.success) {
+					$("#mensajeExito").html(result.message);
+					$("#mensajeExito").removeClass("d-none");
+				} else {
+					$("#mensajeError").html(result.message);
+					$("#mensajeError").removeClass("d-none");
+				}
+				$("#btnEnviar").prop("disabled", false);
+			});
+		}
 	});
 }
 
@@ -149,7 +177,7 @@ optionToExecute = function(opt) {
 
 		case "contact":
 		case "contact2":
-		$main.load("pages/contact.html?nocache="+getRandomValue(), hoverCard);
+		$main.load("pages/contact.html?nocache="+getRandomValue(), clickContact);
 		break;
 
 		default:
