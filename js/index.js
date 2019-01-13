@@ -1,3 +1,4 @@
+
 /* Variables globales */
 var $main = $("#main");
 var $carContainer = $("#mayor-menu");
