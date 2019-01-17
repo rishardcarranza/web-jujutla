@@ -14,7 +14,7 @@ $(document).ready(function () {
 	$main.load("pages/start.html?nocache="+getRandomValue(), loadSlider);
 	$main.fadeIn("slow");
 	// loadFancybox();
-	// loadScroll();
+	setTimeout(loadScroll, 1000);
 });
 
 hoverCard = function() {
@@ -218,16 +218,17 @@ loadFancybox = function () {
 }
 
 loadScroll = function () {
+	console.log("On Top")
 	$(window).scroll(function(){
         if ($(this).scrollTop() > 200) {
-            $('.scrollup').fadeIn();
+            $("#btnOnTop").fadeIn();
         } else {
-            $('.scrollup').fadeOut();
+            $("#btnOnTop").fadeOut();
         }
     });
 
-    $('.scrollup').click(function(){
-        $("html, body").animate({ "scrollTop": "0" }, 600);
+    $("#btnOnTop").click(function(){
+        $("html, body").animate({ "scrollTop": "0" }, 900);
         return false;
     });
 }

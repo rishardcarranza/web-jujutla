@@ -24,7 +24,14 @@ main#main {
     margin-bottom: 6px;
 }
 
-
+/* On Top button */
+#btnOnTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+}
 
 /* Footer */
 #footer-main {
